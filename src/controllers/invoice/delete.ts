@@ -9,6 +9,8 @@ import { isValidObjectId } from 'mongoose';
  * @param {Response} res - The Express response object.
  */
 const deleteWrapper: RequestHandler = async (req, res) => {
+
+
   const { id } = req.params;
 
   // Validate if the provided ID is a valid MongoDB ObjectId
