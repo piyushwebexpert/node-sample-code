@@ -20,6 +20,7 @@ const allWragger: RequestHandler = async (req, res) => {
   res.status(200).json(formattedInvoices);
 };
 
+
 /**
  * Request handler to retrieve an invoice by its ID.
  * Validates the invoice ID and returns the invoice if found.
@@ -41,6 +42,6 @@ const getInvoiceByIdWrapper: RequestHandler = async (req, res) => {
     res.status(200).json(invoice);
   }
 };
-
+console.log("object")
 export const all = allWragger;
 export const getInvoiceById = getInvoiceByIdWrapper;
