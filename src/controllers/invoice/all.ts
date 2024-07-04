@@ -31,6 +31,7 @@ const allWragger: RequestHandler = async (req, res) => {
 const getInvoiceByIdWrapper: RequestHandler = async (req, res) => {
   const { id } = req.params;
 
+  console.log("object")
   if (!isValidObjectId(id)) {
     return res.status(400).json({ error: 'Invalid invoice ID' });
   }
