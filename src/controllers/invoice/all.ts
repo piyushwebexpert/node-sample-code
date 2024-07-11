@@ -43,6 +43,6 @@ const getInvoiceByIdWrapper: RequestHandler = async (req, res) => {
     res.status(200).json(invoice);
   }
 };
-console.log("object")
+
 export const all = allWragger;
 export const getInvoiceById = getInvoiceByIdWrapper;
