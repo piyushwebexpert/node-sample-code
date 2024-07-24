@@ -19,7 +19,7 @@ const client = new OAuth2Client();
 
 // Create an Express application
 export const app: Express = express();
-console.log("object")
+
 // Middleware setup
 app.use(compression()); // Compress HTTP responses
 app.use(express.json()); // Parse JSON request bodies
