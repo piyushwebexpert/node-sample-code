@@ -1,9 +1,10 @@
 import { createLogger, format, transports } from 'winston';
 import moment from 'moment';
-
+console.log("object")
 // Define transports for logging
 const logTransports = [
   // Log errors to a file with JSON format
+
   new transports.File({
     level: 'error',
     filename: `./logs/${moment().format(
