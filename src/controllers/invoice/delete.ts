@@ -12,7 +12,7 @@ const deleteWrapper: RequestHandler = async (req, res) => {
 
 
   const { id } = req.params;
-
+  console.log("object")
   // Validate if the provided ID is a valid MongoDB ObjectId
   if (!isValidObjectId(id)) {
     return res.status(400).json({ error: 'Invalid invoice ID' });
