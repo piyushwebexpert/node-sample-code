@@ -12,11 +12,6 @@ conn.once('open', async () => {
   
   console.log('Connected successfully to MongoDB');
   console.log('Connected successfully to MongoDB');
-  console.log('Connected successfully to MongoDB');
-
-
- 
-
   
 
   // Define the Invoice Schema
